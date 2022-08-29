@@ -1,0 +1,237 @@
+/* Animation can try to use aos animation library */
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #212529 !important;
+    background-color: #ffffff !important;
+}
+
+p{
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+#herosection {
+    background-image: url('/assets/hero-banner.png');
+    background-repeat: no-repeat ;
+    background-position: center ;
+    background-size: cover ;
+}
+
+#work {
+    padding-bottom: 100px;
+}
+
+.navbar {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+.navbar-brand:hover strong {
+    background-color: #ffffff;
+    padding: 10%;
+    border-radius: 0.75rem;
+    color: #ff4d6d;
+    transition: 0.3s all ease;
+}
+
+#navbar_top {
+    background-color: #C9184A;
+}
+
+.navbar-dark .navbar-toggler {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    border-radius: 0.3rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.12rem !important;
+}
+
+.navbar-toggler:hover {
+    box-shadow: 0 0 0 0.12rem;
+}
+
+.navbar-toggler {
+    padding: 0.15rem 0.25rem !important; 
+}
+
+.dark-bg-ft {
+    background-color: #c9184a;
+}
+
+.myheader {
+    padding: 8rem 0;
+}
+
+.display-2 {
+    line-height: 1.5 !important;
+}
+
+.btn {
+    font-size: 1rem !important;
+    border-radius: 0.75rem !important;
+    padding: 1rem !important;
+    background-color: #FF4D6D!important;
+    border-color: #FF4D6D!important;
+    transition-duration: .2s !important;
+    color: #ffffff !important;
+    box-shadow: 0 15px 40px -10px rgb(0 0 0 / 30%);
+}
+
+.btn:hover{
+    box-shadow: 0 8px 20px -12px rgba(0, 0, 0, 0.2);
+    color: #212529 !important;
+    background-color: transparent !important;
+}
+
+.card-cover {
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.featured-work .figure.work-imgs {
+    position: relative;
+    border-radius: 0.75rem;
+}
+
+.featured-work .col .figure figcaption.figure-caption {
+    padding: 0rem 2rem;
+}
+
+.work-imgs .figure-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.work-imgs .figure-caption,
+.work-imgs .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.work-imgs .overlay {
+    background-color: #212529;
+}
+
+.featured-work .col .work-imgs:hover img {
+    transform: scale(1);
+}
+
+.work-thumb {
+    transform: scale(1.1);
+    transition: 0.8s ease-in-out;
+}
+
+.featured-work .col figure:hover .overlay,
+.featured-work .col figure:hover figcaption {
+    opacity: 1;
+}
+
+/* .visit-btn {
+    width: 150px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.visit-btn:hover {
+    text-decoration: none;
+    color: #ffffff !important;
+    border: 1px solid #FF758F;
+} */
+
+#contactme {
+    color: #ffffff;
+    background-color: #ff4d6d;
+    padding: 80px 0px;
+    background-image: url(../assets/contact-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+a.getintouch_btn:hover {
+    background-color: #ffffff !important;
+    color: #FF4D6D !important;
+}
+a.getintouch_btn {
+    background-color: #212529 !important;
+    color: #FF4D6D !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.iconbrands .svg-inline--fa {
+    position: relative;
+    top: 0.5rem;
+}
+
+#contactme .display-4 {
+    line-height: 1.5 !important;
+}
+
+/* #socialicons {
+    display: inline-flex;
+    flex-direction: row;
+} */
+
+#socialicons a {
+    font-size: 2rem;
+    color: #212529;
+    transition: 0.5s all ease;
+}
+
+#socialicons a:hover{
+    color: #ffffff;
+}
+
+.featuredpro {
+    color: #ff4d6d;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    line-height: 1;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+}
+
+.techused span {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 0.25rem;
+    background-color: #FF4D6D;
+    font-size: 0.6rem;
+}
+
+footer div p {
+    text-align: center;
+}
+
+.wavvy span {
+    position: relative;
+    display: inline-block;
+    animation: wavy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes wavy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
